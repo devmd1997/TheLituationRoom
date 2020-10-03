@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CECD341366B127919C02B3C /* Pods_The_Lituation_Room.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B73313234943DC5868F5074 /* Pods_The_Lituation_Room.framework */; };
+		8E3595DD2509DE3C002F7D3E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3595DC2509DE3C002F7D3E /* Home.storyboard */; };
+		8E3595DF2511623A002F7D3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595DE2511623A002F7D3E /* HomeViewController.swift */; };
+		8E3595E125118754002F7D3E /* FeaturedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595E025118754002F7D3E /* FeaturedVideosViewController.swift */; };
+		8E3595E325118767002F7D3E /* FeaturedPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595E225118767002F7D3E /* FeaturedPodcastsViewController.swift */; };
+		8E3595E62511B318002F7D3E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595E42511B318002F7D3E /* VideoCell.swift */; };
+		8E3595E72511B318002F7D3E /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3595E52511B318002F7D3E /* VideoCell.xib */; };
+		8E3595E92511B541002F7D3E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595E82511B541002F7D3E /* Video.swift */; };
+		8E3595EB2511B94E002F7D3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595EA2511B94E002F7D3E /* Constants.swift */; };
+		8E3595ED2511C220002F7D3E /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595EC2511C220002F7D3E /* customTextField.swift */; };
+		8E3595F22511C812002F7D3E /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595F02511C812002F7D3E /* PodcastCell.swift */; };
+		8E3595F32511C812002F7D3E /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3595F12511C812002F7D3E /* PodcastCell.xib */; };
+		8E3595FD2516EBF4002F7D3E /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595FC2516EBF4002F7D3E /* Podcast.swift */; };
+		8E3595FF2516F4E5002F7D3E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3595FE2516F4E5002F7D3E /* Search.storyboard */; };
+		8E3596032516F51A002F7D3E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3596022516F51A002F7D3E /* SearchViewController.swift */; };
+		8E68AB0C250071E100F0814B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB0B250071E100F0814B /* AppDelegate.swift */; };
+		8E68AB0E250071E100F0814B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB0D250071E100F0814B /* SceneDelegate.swift */; };
+		8E68AB10250071E100F0814B /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB0F250071E100F0814B /* GetStartedViewController.swift */; };
+		8E68AB13250071E100F0814B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E68AB11250071E100F0814B /* Main.storyboard */; };
+		8E68AB16250071E100F0814B /* The_Lituation_Room.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB14250071E100F0814B /* The_Lituation_Room.xcdatamodeld */; };
+		8E68AB1B250071E700F0814B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E68AB19250071E700F0814B /* LaunchScreen.storyboard */; };
+		8E68AB232500722F00F0814B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E68AB222500722F00F0814B /* Assets.xcassets */; };
+		8E68AB2C2500896D00F0814B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB2B2500896D00F0814B /* RoundButton.swift */; };
+		8E68AB312501C85B00F0814B /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E68AB302501C85B00F0814B /* Impact.ttf */; };
+		8E68AB332501CAE800F0814B /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB322501CAE800F0814B /* LoginSignUpViewController.swift */; };
+		8E68AB352501D7CD00F0814B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB342501D7CD00F0814B /* LoginViewController.swift */; };
+		8E68AB372501D7D800F0814B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AB362501D7D800F0814B /* SignUpViewController.swift */; };
+		8EEEB61B251D802100309669 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEEB61A251D802100309669 /* MainTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B73313234943DC5868F5074 /* Pods_The_Lituation_Room.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Lituation_Room.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3595DC2509DE3C002F7D3E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8E3595DE2511623A002F7D3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E3595E025118754002F7D3E /* FeaturedVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVideosViewController.swift; sourceTree = "<group>"; };
+		8E3595E225118767002F7D3E /* FeaturedPodcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPodcastsViewController.swift; sourceTree = "<group>"; };
+		8E3595E42511B318002F7D3E /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = "The Lituation Room/Model/VideoCell.swift"; sourceTree = SOURCE_ROOT; };
+		8E3595E52511B318002F7D3E /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VideoCell.xib; path = "The Lituation Room/Model/VideoCell.xib"; sourceTree = SOURCE_ROOT; };
+		8E3595E82511B541002F7D3E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8E3595EA2511B94E002F7D3E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E3595EC2511C220002F7D3E /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
+		8E3595F02511C812002F7D3E /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		8E3595F12511C812002F7D3E /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		8E3595FC2516EBF4002F7D3E /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		8E3595FE2516F4E5002F7D3E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		8E3596022516F51A002F7D3E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8E68AB08250071E100F0814B /* The Lituation Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Lituation Room.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E68AB0B250071E100F0814B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E68AB0D250071E100F0814B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E68AB0F250071E100F0814B /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		8E68AB12250071E100F0814B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E68AB15250071E100F0814B /* The_Lituation_Room.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = The_Lituation_Room.xcdatamodel; sourceTree = "<group>"; };
+		8E68AB1A250071E700F0814B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E68AB1C250071E700F0814B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E68AB222500722F00F0814B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		8E68AB2B2500896D00F0814B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		8E68AB302501C85B00F0814B /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
+		8E68AB322501CAE800F0814B /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		8E68AB342501D7CD00F0814B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E68AB362501D7D800F0814B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8EEEB61A251D802100309669 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C78D973DBA3CAD0CAF75817B /* Pods-The Lituation Room.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Lituation Room.release.xcconfig"; path = "Target Support Files/Pods-The Lituation Room/Pods-The Lituation Room.release.xcconfig"; sourceTree = "<group>"; };
+		E0EEC51515CBD98404A0BFA6 /* Pods-The Lituation Room.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Lituation Room.debug.xcconfig"; path = "Target Support Files/Pods-The Lituation Room/Pods-The Lituation Room.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E68AB05250071E100F0814B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CECD341366B127919C02B3C /* Pods_The_Lituation_Room.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76C35D28F15071E6937F3A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B73313234943DC5868F5074 /* Pods_The_Lituation_Room.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E68AAFF250071E100F0814B = {
+			isa = PBXGroup;
+			children = (
+				8E68AB0A250071E100F0814B /* The Lituation Room */,
+				8E68AB09250071E100F0814B /* Products */,
+				933A0C5E9EC621CD2E3F5E72 /* Pods */,
+				76C35D28F15071E6937F3A5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E68AB09250071E100F0814B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AB08250071E100F0814B /* The Lituation Room.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E68AB0A250071E100F0814B /* The Lituation Room */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AB2F2501C82D00F0814B /* fonts */,
+				8E68AB282500770300F0814B /* Controller */,
+				8E68AB27250076F000F0814B /* View */,
+				8E68AB26250076E600F0814B /* Model */,
+				8E68AB0B250071E100F0814B /* AppDelegate.swift */,
+				8E68AB0D250071E100F0814B /* SceneDelegate.swift */,
+				8E68AB222500722F00F0814B /* Assets.xcassets */,
+				8E68AB1C250071E700F0814B /* Info.plist */,
+				8E68AB14250071E100F0814B /* The_Lituation_Room.xcdatamodeld */,
+				8E3595EA2511B94E002F7D3E /* Constants.swift */,
+			);
+			path = "The Lituation Room";
+			sourceTree = "<group>";
+		};
+		8E68AB26250076E600F0814B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E3595E82511B541002F7D3E /* Video.swift */,
+				8E3595FC2516EBF4002F7D3E /* Podcast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E68AB27250076F000F0814B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E3595E42511B318002F7D3E /* VideoCell.swift */,
+				8E3595E52511B318002F7D3E /* VideoCell.xib */,
+				8E68AB11250071E100F0814B /* Main.storyboard */,
+				8E68AB19250071E700F0814B /* LaunchScreen.storyboard */,
+				8E68AB2B2500896D00F0814B /* RoundButton.swift */,
+				8E3595DC2509DE3C002F7D3E /* Home.storyboard */,
+				8E3595EC2511C220002F7D3E /* customTextField.swift */,
+				8E3595F02511C812002F7D3E /* PodcastCell.swift */,
+				8E3595F12511C812002F7D3E /* PodcastCell.xib */,
+				8E3595FE2516F4E5002F7D3E /* Search.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E68AB282500770300F0814B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AB0F250071E100F0814B /* GetStartedViewController.swift */,
+				8E68AB322501CAE800F0814B /* LoginSignUpViewController.swift */,
+				8E68AB342501D7CD00F0814B /* LoginViewController.swift */,
+				8E68AB362501D7D800F0814B /* SignUpViewController.swift */,
+				8EEEB61A251D802100309669 /* MainTabBarController.swift */,
+				8E3595DE2511623A002F7D3E /* HomeViewController.swift */,
+				8E3595E025118754002F7D3E /* FeaturedVideosViewController.swift */,
+				8E3595E225118767002F7D3E /* FeaturedPodcastsViewController.swift */,
+				8E3596022516F51A002F7D3E /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E68AB2F2501C82D00F0814B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AB302501C85B00F0814B /* Impact.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		933A0C5E9EC621CD2E3F5E72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0EEC51515CBD98404A0BFA6 /* Pods-The Lituation Room.debug.xcconfig */,
+				C78D973DBA3CAD0CAF75817B /* Pods-The Lituation Room.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E68AB07250071E100F0814B /* The Lituation Room */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E68AB1F250071E700F0814B /* Build configuration list for PBXNativeTarget "The Lituation Room" */;
+			buildPhases = (
+				49CE82A5A7E44B8D2D901551 /* [CP] Check Pods Manifest.lock */,
+				8E68AB04250071E100F0814B /* Sources */,
+				8E68AB05250071E100F0814B /* Frameworks */,
+				8E68AB06250071E100F0814B /* Resources */,
+				D60FFD919FD1565263F5E1FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Lituation Room";
+			productName = "The Lituation Room";
+			productReference = 8E68AB08250071E100F0814B /* The Lituation Room.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E68AB00250071E100F0814B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Devon Adams";
+				TargetAttributes = {
+					8E68AB07250071E100F0814B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 8E68AB03250071E100F0814B /* Build configuration list for PBXProject "The Lituation Room" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E68AAFF250071E100F0814B;
+			productRefGroup = 8E68AB09250071E100F0814B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E68AB07250071E100F0814B /* The Lituation Room */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E68AB06250071E100F0814B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E68AB312501C85B00F0814B /* Impact.ttf in Resources */,
+				8E3595DD2509DE3C002F7D3E /* Home.storyboard in Resources */,
+				8E68AB1B250071E700F0814B /* LaunchScreen.storyboard in Resources */,
+				8E3595E72511B318002F7D3E /* VideoCell.xib in Resources */,
+				8E68AB232500722F00F0814B /* Assets.xcassets in Resources */,
+				8E3595F32511C812002F7D3E /* PodcastCell.xib in Resources */,
+				8E3595FF2516F4E5002F7D3E /* Search.storyboard in Resources */,
+				8E68AB13250071E100F0814B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49CE82A5A7E44B8D2D901551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Lituation Room-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60FFD919FD1565263F5E1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Lituation Room/Pods-The Lituation Room-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Lituation Room/Pods-The Lituation Room-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Lituation Room/Pods-The Lituation Room-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E68AB04250071E100F0814B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E68AB352501D7CD00F0814B /* LoginViewController.swift in Sources */,
+				8E3595FD2516EBF4002F7D3E /* Podcast.swift in Sources */,
+				8E68AB16250071E100F0814B /* The_Lituation_Room.xcdatamodeld in Sources */,
+				8E3595ED2511C220002F7D3E /* customTextField.swift in Sources */,
+				8E3595E325118767002F7D3E /* FeaturedPodcastsViewController.swift in Sources */,
+				8E3595E125118754002F7D3E /* FeaturedVideosViewController.swift in Sources */,
+				8E68AB372501D7D800F0814B /* SignUpViewController.swift in Sources */,
+				8E3595E62511B318002F7D3E /* VideoCell.swift in Sources */,
+				8E68AB2C2500896D00F0814B /* RoundButton.swift in Sources */,
+				8E68AB10250071E100F0814B /* GetStartedViewController.swift in Sources */,
+				8E3595DF2511623A002F7D3E /* HomeViewController.swift in Sources */,
+				8E3595F22511C812002F7D3E /* PodcastCell.swift in Sources */,
+				8E3596032516F51A002F7D3E /* SearchViewController.swift in Sources */,
+				8EEEB61B251D802100309669 /* MainTabBarController.swift in Sources */,
+				8E3595E92511B541002F7D3E /* Video.swift in Sources */,
+				8E68AB0C250071E100F0814B /* AppDelegate.swift in Sources */,
+				8E3595EB2511B94E002F7D3E /* Constants.swift in Sources */,
+				8E68AB332501CAE800F0814B /* LoginSignUpViewController.swift in Sources */,
+				8E68AB0E250071E100F0814B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E68AB11250071E100F0814B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E68AB12250071E100F0814B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E68AB19250071E700F0814B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E68AB1A250071E700F0814B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E68AB1D250071E700F0814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E68AB1E250071E700F0814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E68AB20250071E700F0814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EEC51515CBD98404A0BFA6 /* Pods-The Lituation Room.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AFZGE32SZQ;
+				INFOPLIST_FILE = "The Lituation Room/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Devon.The-Lituation-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E68AB21250071E700F0814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78D973DBA3CAD0CAF75817B /* Pods-The Lituation Room.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AFZGE32SZQ;
+				INFOPLIST_FILE = "The Lituation Room/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Devon.The-Lituation-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E68AB03250071E100F0814B /* Build configuration list for PBXProject "The Lituation Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E68AB1D250071E700F0814B /* Debug */,
+				8E68AB1E250071E700F0814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E68AB1F250071E700F0814B /* Build configuration list for PBXNativeTarget "The Lituation Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E68AB20250071E700F0814B /* Debug */,
+				8E68AB21250071E700F0814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E68AB14250071E100F0814B /* The_Lituation_Room.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E68AB15250071E100F0814B /* The_Lituation_Room.xcdatamodel */,
+			);
+			currentVersion = 8E68AB15250071E100F0814B /* The_Lituation_Room.xcdatamodel */;
+			path = The_Lituation_Room.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E68AB00250071E100F0814B /* Project object */;
+}

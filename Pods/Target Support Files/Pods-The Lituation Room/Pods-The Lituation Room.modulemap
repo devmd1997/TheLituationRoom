@@ -1,0 +1,6 @@
+framework module Pods_The_Lituation_Room {
+  umbrella header "Pods-The Lituation Room-umbrella.h"
+
+  export *
+  module * { export * }
+}

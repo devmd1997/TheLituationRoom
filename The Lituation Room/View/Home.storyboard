@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="BRo-01-JGg">
+            <objects>
+                <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="u8H-A1-QPv" customClass="HomeViewController" customModule="The_Lituation_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S4s-y9-xSj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dl7-1f-HQ9" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="275" width="414" height="70"/>
+                                <color key="backgroundColor" name="litYellow"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="FtS-K2-SE5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zqU-zI-ngT">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coK-RV-W6o">
+                                <rect key="frame" x="0.0" y="344" width="414" height="552"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xLE-AN-8VP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="f3V-Pa-k97"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="HomeVC" image="lishablive" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-pg-IJX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QCF-pg-IJX" secondAttribute="height" multiplier="138:89" id="Xm3-FF-Jxn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="litYellow"/>
+                        <constraints>
+                            <constraint firstItem="QCF-pg-IJX" firstAttribute="top" secondItem="S4s-y9-xSj" secondAttribute="top" id="8OR-Qb-icM"/>
+                            <constraint firstItem="QCF-pg-IJX" firstAttribute="leading" secondItem="dif-S2-aik" secondAttribute="leading" id="Aof-iI-NiB"/>
+                            <constraint firstItem="Dl7-1f-HQ9" firstAttribute="trailing" secondItem="dif-S2-aik" secondAttribute="trailing" id="boA-l0-hab"/>
+                            <constraint firstAttribute="trailing" secondItem="QCF-pg-IJX" secondAttribute="trailing" id="cPm-p4-v22"/>
+                            <constraint firstItem="Dl7-1f-HQ9" firstAttribute="top" secondItem="QCF-pg-IJX" secondAttribute="bottom" constant="8" id="itZ-MV-jZL"/>
+                            <constraint firstItem="Dl7-1f-HQ9" firstAttribute="leading" secondItem="dif-S2-aik" secondAttribute="leading" id="pbQ-fy-OMw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dif-S2-aik"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house" catalog="system" id="T43-iW-TPx">
+                        <color key="badgeColor" name="litYellow"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="aUa-0u-bfu"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="Dl7-1f-HQ9" id="qy0-gi-0PM"/>
+                        <outlet property="containerView" destination="coK-RV-W6o" id="PDo-gS-Odz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYs-GQ-Z8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="45.535714285714285"/>
+        </scene>
+        <!--Featured Podcasts View Controller-->
+        <scene sceneID="R1t-b1-imz">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedPodcasts" id="qOY-q4-uPx" customClass="FeaturedPodcastsViewController" customModule="The_Lituation_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="llL-RI-3Z8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-2D-163">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="litYellow"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="litYellow"/>
+                        <constraints>
+                            <constraint firstItem="puH-Sr-SBC" firstAttribute="bottom" secondItem="JW2-2D-163" secondAttribute="bottom" id="Erv-pD-Zpe"/>
+                            <constraint firstItem="JW2-2D-163" firstAttribute="top" secondItem="puH-Sr-SBC" secondAttribute="top" id="Oa1-kN-Mzu"/>
+                            <constraint firstItem="puH-Sr-SBC" firstAttribute="trailing" secondItem="JW2-2D-163" secondAttribute="trailing" id="fyA-F0-cQq"/>
+                            <constraint firstItem="JW2-2D-163" firstAttribute="leading" secondItem="puH-Sr-SBC" secondAttribute="leading" id="zfQ-Ar-nlV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="puH-Sr-SBC"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JW2-2D-163" id="zi7-9W-ZIJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tgz-Vg-pNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314.4927536231885" y="662.94642857142856"/>
+        </scene>
+        <!--Featured Videos View Controller-->
+        <scene sceneID="4oQ-UN-HLC">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedVideos" id="lp3-A4-Eqs" customClass="FeaturedVideosViewController" customModule="The_Lituation_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhI-il-McF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IGh-Pl-Xd9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="litYellow"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="litYellow"/>
+                        <constraints>
+                            <constraint firstItem="IGh-Pl-Xd9" firstAttribute="top" secondItem="Tcb-CE-5aM" secondAttribute="top" id="1bg-aH-h3w"/>
+                            <constraint firstItem="IGh-Pl-Xd9" firstAttribute="leading" secondItem="Tcb-CE-5aM" secondAttribute="leading" id="IQa-Dg-vow"/>
+                            <constraint firstItem="IGh-Pl-Xd9" firstAttribute="trailing" secondItem="Tcb-CE-5aM" secondAttribute="trailing" id="b2h-Ip-yyp"/>
+                            <constraint firstItem="IGh-Pl-Xd9" firstAttribute="bottom" secondItem="Tcb-CE-5aM" secondAttribute="bottom" id="unZ-du-CyS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tcb-CE-5aM"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoTable" destination="IGh-Pl-Xd9" id="9s9-93-YIe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CH9-Fc-JBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.7101449275362" y="-129.24107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="lishablive" width="622" height="572"/>
+        <namedColor name="litYellow">
+            <color red="1" green="0.97254901960784312" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
