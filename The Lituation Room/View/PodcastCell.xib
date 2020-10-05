@@ -40,8 +40,9 @@
                             </imageView>
                         </subviews>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-UD-UWk">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HsG-UD-UWk">
                         <rect key="frame" x="76" y="0.0" width="214" height="77"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-Bi-rNn">
                                 <rect key="frame" x="0.0" y="45" width="214" height="15"/>
@@ -62,12 +63,9 @@
                 </subviews>
                 <color key="backgroundColor" name="litYellow"/>
                 <constraints>
-                    <constraint firstItem="HsG-UD-UWk" firstAttribute="leading" secondItem="Slb-Bd-8BH" secondAttribute="trailing" id="5O9-4b-XsM"/>
                     <constraint firstItem="Slb-Bd-8BH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8hI-kd-mth"/>
                     <constraint firstAttribute="bottom" secondItem="Slb-Bd-8BH" secondAttribute="bottom" id="IM4-26-Jrs"/>
                     <constraint firstItem="Slb-Bd-8BH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="azn-OV-37w"/>
-                    <constraint firstItem="HsG-UD-UWk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g3M-tX-Crl"/>
-                    <constraint firstAttribute="bottom" secondItem="HsG-UD-UWk" secondAttribute="bottom" id="uLf-kr-4Tl"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

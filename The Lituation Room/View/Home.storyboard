@@ -11,11 +11,29 @@
         <!--Home-->
         <scene sceneID="BRo-01-JGg">
             <objects>
-                <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="u8H-A1-QPv" customClass="HomeViewController" customModule="The_Lituation_Room" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="HomeVC" storyboardIdentifier="HomeVC" id="u8H-A1-QPv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S4s-y9-xSj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQX-7Z-5nb">
+                                <rect key="frame" x="0.0" y="353" width="414" height="543"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jkh-qu-ohS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="543"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="soI-zx-nWJ" firstAttribute="bottom" secondItem="Jkh-qu-ohS" secondAttribute="bottom" id="6BQ-jg-5gQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jkh-qu-ohS" secondAttribute="trailing" id="F9E-60-ML0"/>
+                                    <constraint firstItem="Jkh-qu-ohS" firstAttribute="top" secondItem="soI-zx-nWJ" secondAttribute="top" id="LOD-Ye-bf4"/>
+                                    <constraint firstItem="soI-zx-nWJ" firstAttribute="trailing" secondItem="Jkh-qu-ohS" secondAttribute="trailing" id="dOb-sL-AYB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jkh-qu-ohS" secondAttribute="bottom" id="iWu-mk-VVe"/>
+                                    <constraint firstItem="Jkh-qu-ohS" firstAttribute="leading" secondItem="soI-zx-nWJ" secondAttribute="leading" id="voo-KG-1wz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="uJ6-gd-OoT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="soI-zx-nWJ"/>
+                            </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dl7-1f-HQ9" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="0.0" y="275" width="414" height="70"/>
                                 <color key="backgroundColor" name="litYellow"/>
@@ -30,12 +48,6 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coK-RV-W6o">
-                                <rect key="frame" x="0.0" y="344" width="414" height="552"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="xLE-AN-8VP"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="f3V-Pa-k97"/>
-                            </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="HomeVC" image="lishablive" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-pg-IJX">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
                                 <constraints>
@@ -47,10 +59,14 @@
                         <constraints>
                             <constraint firstItem="QCF-pg-IJX" firstAttribute="top" secondItem="S4s-y9-xSj" secondAttribute="top" id="8OR-Qb-icM"/>
                             <constraint firstItem="QCF-pg-IJX" firstAttribute="leading" secondItem="dif-S2-aik" secondAttribute="leading" id="Aof-iI-NiB"/>
+                            <constraint firstItem="pQX-7Z-5nb" firstAttribute="top" secondItem="Dl7-1f-HQ9" secondAttribute="bottom" constant="8" id="Tmj-QL-qE5"/>
                             <constraint firstItem="Dl7-1f-HQ9" firstAttribute="trailing" secondItem="dif-S2-aik" secondAttribute="trailing" id="boA-l0-hab"/>
                             <constraint firstAttribute="trailing" secondItem="QCF-pg-IJX" secondAttribute="trailing" id="cPm-p4-v22"/>
                             <constraint firstItem="Dl7-1f-HQ9" firstAttribute="top" secondItem="QCF-pg-IJX" secondAttribute="bottom" constant="8" id="itZ-MV-jZL"/>
+                            <constraint firstItem="pQX-7Z-5nb" firstAttribute="trailing" secondItem="Dl7-1f-HQ9" secondAttribute="trailing" id="ive-NR-cSg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pQX-7Z-5nb" secondAttribute="bottom" constant="-34" id="l3o-Vl-lLx"/>
                             <constraint firstItem="Dl7-1f-HQ9" firstAttribute="leading" secondItem="dif-S2-aik" secondAttribute="leading" id="pbQ-fy-OMw"/>
+                            <constraint firstItem="pQX-7Z-5nb" firstAttribute="leading" secondItem="Dl7-1f-HQ9" secondAttribute="leading" id="uG7-W0-bUW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dif-S2-aik"/>
                     </view>
@@ -60,7 +76,7 @@
                     <navigationItem key="navigationItem" id="aUa-0u-bfu"/>
                     <connections>
                         <outlet property="buttonBarView" destination="Dl7-1f-HQ9" id="qy0-gi-0PM"/>
-                        <outlet property="containerView" destination="coK-RV-W6o" id="PDo-gS-Odz"/>
+                        <outlet property="containerView" destination="pQX-7Z-5nb" id="vuM-Xk-3rc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYs-GQ-Z8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loginVC = LoginSignUpViewController()
         let homeVC = HomeViewController()
         let searchVC = SearchViewController()
         homeVC.title = "Home"
@@ -27,7 +28,7 @@ class MainTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
