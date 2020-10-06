@@ -24,7 +24,7 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
         return cv
     }()
     let cellId = "cellId"
-    
+    var homeVC: HomeViewController?
     
     let titleNames = ["Featured Videos", "Featured Podcasts"]
     override init(frame: CGRect) {
@@ -76,11 +76,7 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let x = CGFloat(indexPath.row) * frame.width / 2
-        horizontalBarLeftAnchorConstraint?.constant = x
-        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-            self.layoutIfNeeded()
-        }, completion: nil)
+        homeVC?.scrollToMenuIndex(menuIndex: indexPath.row)
     }
 }
 

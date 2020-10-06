@@ -10,6 +10,7 @@
 		8CECD341366B127919C02B3C /* Pods_The_Lituation_Room.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B73313234943DC5868F5074 /* Pods_The_Lituation_Room.framework */; };
 		8E227863252AB550000DDFE7 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E227862252AB550000DDFE7 /* MenuBar.swift */; };
 		8E227866252AB711000DDFE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E227865252AB711000DDFE7 /* Extensions.swift */; };
+		8E22786A252C1A51000DDFE7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E227869252C1A51000DDFE7 /* FeedCell.swift */; };
 		8E3595DD2509DE3C002F7D3E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3595DC2509DE3C002F7D3E /* Home.storyboard */; };
 		8E3595DF2511623A002F7D3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595DE2511623A002F7D3E /* HomeViewController.swift */; };
 		8E3595E125118754002F7D3E /* FeaturedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3595E025118754002F7D3E /* FeaturedVideosViewController.swift */; };
@@ -43,6 +44,7 @@
 		8B73313234943DC5868F5074 /* Pods_The_Lituation_Room.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Lituation_Room.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E227862252AB550000DDFE7 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		8E227865252AB711000DDFE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8E227869252C1A51000DDFE7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = "The Lituation Room/Controller/FeedCell.swift"; sourceTree = SOURCE_ROOT; };
 		8E3595DC2509DE3C002F7D3E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8E3595DE2511623A002F7D3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E3595E025118754002F7D3E /* FeaturedVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVideosViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		8E68AB27250076F000F0814B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E227869252C1A51000DDFE7 /* FeedCell.swift */,
 				8E3595E42511B318002F7D3E /* VideoCell.swift */,
 				8E3595E52511B318002F7D3E /* VideoCell.xib */,
 				8E68AB11250071E100F0814B /* Main.storyboard */,
@@ -335,6 +338,7 @@
 				8E3596032516F51A002F7D3E /* SearchViewController.swift in Sources */,
 				8E227866252AB711000DDFE7 /* Extensions.swift in Sources */,
 				8EEEB61B251D802100309669 /* MainTabBarController.swift in Sources */,
+				8E22786A252C1A51000DDFE7 /* FeedCell.swift in Sources */,
 				8E227863252AB550000DDFE7 /* MenuBar.swift in Sources */,
 				8E3595E92511B541002F7D3E /* Video.swift in Sources */,
 				8E68AB0C250071E100F0814B /* AppDelegate.swift in Sources */,

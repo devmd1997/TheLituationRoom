@@ -10,11 +10,18 @@ import UIKit
 import XLPagerTabStrip
 
 class HomeViewController: UIViewController {
-
+    
+    
+    var collectionView: UICollectionView?
+    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+    let cellId = "cellId"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "litYellow")
+        setupCollectionView()
         setupMenuBar()
+        
 //        buttonBarView.delegate = self
 //        loadBarItems()
 
@@ -29,9 +36,9 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true;
     }
     
-    let menuBar: MenuBar = {
+    lazy var menuBar: MenuBar = {
         let mb = MenuBar()
-        
+        mb.homeVC = self
         mb.translatesAutoresizingMaskIntoConstraints = false
         return mb
     }()
@@ -52,59 +59,63 @@ class HomeViewController: UIViewController {
         return table
     }()
     
+    
     private func setupMenuBar() {
         
         view.addSubview(headerImage)
         view.addSubview(menuBar)
-        view.addSubview(tableView)
+        view.addSubview(collectionView!)
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: menuBar)
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: headerImage)
-        view.addConstraintsWithFormat(format: "H:|[v0]|", views: tableView)
-        view.addConstraintsWithFormat(format: "V:|-35-[v0(64)]-0-[v1(267)]-0-[v2]|", views: menuBar,headerImage,tableView)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView!)
+        view.addConstraintsWithFormat(format: "V:|-35-[v0(64)]-0-[v1(267)]-0-[v2]|", views: menuBar,headerImage,collectionView!)
     }
     
-    
-//    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-//         let child1 = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "FeaturedVideos") as! FeaturedVideosViewController
-//
-//         let child2 = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "FeaturedPodcasts") as! FeaturedPodcastsViewController
-//
-//         return [child1, child2]
-//    }
-    
-//    func loadBarItems(){
-//        settings.style.buttonBarBackgroundColor = UIColor(named: "litYellow")!
-//        settings.style.buttonBarItemBackgroundColor = UIColor(named: "litYellow")!
-//        settings.style.selectedBarBackgroundColor = UIColor(named: "litYellow")!
-//        settings.style.buttonBarItemFont = UIFont(name: "Futura", size: 14)!
-//        settings.style.selectedBarHeight = 2.0
-//        settings.style.buttonBarMinimumLineSpacing = 0
-//        settings.style.buttonBarItemTitleColor = .black
-//        settings.style.buttonBarItemsShouldFillAvailableWidth = true
-//        settings.style.buttonBarLeftContentInset = 0
-//        settings.style.buttonBarRightContentInset = 0
-//
-//        changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
-//        guard changeCurrentIndex == true else { return }
-//        oldCell?.label.textColor = .darkGray
-//            oldCell?.label.font = UIFont(name: "Futura", size: 14)
-//            newCell?.label.textColor = UIColor(named: "litBlack")!
-//            newCell?.label.font = UIFont(name: "Futura-Bold", size: 14)!
-//        }
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 120, height: 40)
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func scrollToMenuIndex(menuIndex: Int){
+        let indexPath = IndexPath(item: menuIndex, section: 0)
+        collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
-    */
+}
 
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        return cell
+    }
+    
+    func setupCollectionView() {
+        
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collectionView?.backgroundColor = UIColor(named: "litYellow")
+        collectionView?.setCollectionViewLayout(layout, animated: true)
+        collectionView?.register(FeedCell.self, forCellWithReuseIdentifier:  cellId)
+        collectionView?.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
+        collectionView?.delegate = self
+        collectionView?.dataSource = self
+        collectionView?.translatesAutoresizingMaskIntoConstraints = false
+        collectionView?.isPagingEnabled = true
+        
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: view.frame.height)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        menuBar.horizontalBarLeftAnchorConstraint?.constant = (scrollView.contentOffset.x / 2)
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let index = targetContentOffset.pointee.x / view.frame.width
+        let indexPath = IndexPath(item: Int(index), section: 0)
+        menuBar.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+    }
 }
